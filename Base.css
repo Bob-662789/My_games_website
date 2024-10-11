@@ -1,8 +1,19 @@
-h1{
+h1, h3{
  background-color: chartreuse;
+ text-align: center;
+}
+h2{
+    background-color: black;
+    color: chartreuse;
+    text-align: center;
 }
 
 p{
     background-color: black;
     color:chartreuse;
+    text-align: center;
+}
+
+body{
+    background-color: red;
 }
