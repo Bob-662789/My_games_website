@@ -1,0 +1,3 @@
+alert(
+"Not A Scam"
+);

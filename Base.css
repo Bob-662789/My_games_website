@@ -7,19 +7,26 @@ h2{
     color: chartreuse;
     text-align: center;
 }
-
 p{
     background-color: black;
     color:chartreuse;
     text-align: center;
 }
-a{ 
+a {
+    display: block; 
+    text-align: center; 
+    background-color: chartreuse;
+    color: black;
+    width: fit-content; 
+    margin: 0 auto; 
+    padding: 0px; 
+}
+
+h4{
     text-align: center;
     background-color: chartreuse;
     color: black;
 }
-
-
 body{
-    background-color: red;
+    background-color: #50C878
 }
