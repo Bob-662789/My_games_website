@@ -12,6 +12,7 @@
 <h4>
     HAVE FUN!!!!!!!!!!
 </h4>
+<p id="demo"></p>
 <a href="https://play.unity.com/en/games/a5f70220-6951-484e-8293-eadd3bc31b85/block-game-20">
     Block game compatible with controller</a>
     <meta charset="UTF-8">
@@ -26,6 +27,10 @@
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed/MU4Ela05lGc?si=U91s2a1GxYcR7ACJ" allowfullscreen></iframe>
     </div>
-    <script src="Base.js"></script>
+    <script src="Base.js">
+    </script>
+    <script>
+       document.getElementById("demo").innerHTML =Math.floor(Math.random() * 1000);
+    </script>
  </body>
 </html>
