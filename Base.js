@@ -1,3 +1,3 @@
 alert(
-"Not A Scam"
+"ENTER AT YOUR OWN RISK"
 );

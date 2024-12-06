@@ -1,36 +1,36 @@
 <html>
+
 <head>
-<link rel="stylesheet" href="Base.css">
+  <link rel="stylesheet" href="Base.css">
 </head>
 <body>
-<h1>Green Games</h1>
-<h2>Free Games</h2>
-<h3>WELCOME TO MY WEBSITE</h3>
-<p> 
-    NO ADS
-</p>
-<h4>
-    HAVE FUN!!!!!!!!!!
-</h4>
-<p id="demo"></p>
-<a href="https://play.unity.com/en/games/a5f70220-6951-484e-8293-eadd3bc31b85/block-game-20">
-    Block game compatible with controller</a>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GREEN GAMES</title>
-    <style>
-      .video-container { text-align: center; }
-      iframe { width: 50%; height: 50%; border: none; }
-    </style>
-  </head>
-  <body>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/MU4Ela05lGc?si=U91s2a1GxYcR7ACJ" allowfullscreen></iframe>
-    </div>
-    <script src="Base.js">
+  <h1>Green Games</h1>
+  <input type="text" id="name" name="name" placeholder="Username">
+  <h2 id="displayText">test title</h2>
+  <h3>WELCOME TO MY WEBSITE</h3>
+  <p>NO ADS</p>
+  <h4>HAVE FUN!!!!!!!!!!</h4>
+  <p id="demo"></p>
+  <a href="https://play.unity.com/en/games/a5f70220-6951-484e-8293-eadd3bc31b85/block-game-20">
+    Block game compatible with controller
+  </a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN GAMES</title>
+  <style>
+    .video-container { text-align: center; }
+    iframe { width: 50%; height: 50%; border: none; }
+  </style>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/MU4Ela05lGc?si=U91s2a1GxYcR7ACJ&controls=0&rel=0" title="YouTube video player"></iframe>
+  </div>
+  <script src="Base.js">document.getElementById("demo").innerHTML = Math.floor(Math.random() * 1000);
+    document.getElementById('name').addEventListener('keyup',
+  function() {
+    const userInput = document.getElementById('name').value;
+    documet.getElementById("displayText").textCon = userInput;})
+
+
     </script>
-    <script>
-       document.getElementById("demo").innerHTML =Math.floor(Math.random() * 1000);
-    </script>
- </body>
-</html>
+</body>
+</html> 
