@@ -5,8 +5,10 @@
 </head>
 <body>
   <h1>Green Games</h1>
-  <input type="text" id="userInput" name="userInput" placeholder="Username">
-  <h2 id="displayText">x</h2>
+  <input type="text" id="userInput" name="userInput" placeholder="GameName">
+  <input type="text" id="game_url" name="game_url" placeholder="GameLibrary"> 
+  <h2 id="displayText1"> </h2>
+  <a  id="displayText2"> </a>
   <h3>WELCOME TO MY WEBSITE</h3>
   <p>NO ADS</p>
   <h4>HAVE FUN!!!!!!!!!!</h4>
@@ -25,13 +27,16 @@
     <iframe src="https://www.youtube.com/embed/MU4Ela05lGc?si=U91s2a1GxYcR7ACJ&controls=0&rel=0" title="YouTube video player"></iframe>
   </div>
   <script>
-    document.getElementById("demo").innerHTML = Math.floor(Math.random() * 1000);
 
-    document.getElementById('userInput').addEventListener('keyup', function() {
+
+    document.getElementById('game_url').addEventListener('keyup', function() {
+      const game_url = document.getElementById('game_url').value;
+      let anchorTag = document.getElementById('displayText2');
       const userInput = document.getElementById('userInput').value;
-      document.getElementById('displayText').textContent = userInput;
-    });
+      anchorTag.href = game_url; // Use the full href from the parsed URL
+      anchorTag.textContent = userInput; // Display the URL as text
+      anchorTag.target = '_blank'; // Open the link in a new tab
+}); 
   </script>
 </body>
 </html>
- 
