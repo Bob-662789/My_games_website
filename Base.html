@@ -5,8 +5,8 @@
 </head>
 <body>
   <h1>Green Games</h1>
-  <input type="text" id="name" name="name" placeholder="Username">
-  <h2 id="displayText">test title</h2>
+  <input type="text" id="userInput" name="userInput" placeholder="Username">
+  <h2 id="displayText">x</h2>
   <h3>WELCOME TO MY WEBSITE</h3>
   <p>NO ADS</p>
   <h4>HAVE FUN!!!!!!!!!!</h4>
@@ -24,13 +24,14 @@
   <div class="video-container">
     <iframe src="https://www.youtube.com/embed/MU4Ela05lGc?si=U91s2a1GxYcR7ACJ&controls=0&rel=0" title="YouTube video player"></iframe>
   </div>
-  <script src="Base.js">document.getElementById("demo").innerHTML = Math.floor(Math.random() * 1000);
-    document.getElementById('name').addEventListener('keyup',
-  function() {
-    const userInput = document.getElementById('name').value;
-    documet.getElementById("displayText").textCon = userInput;})
+  <script>
+    document.getElementById("demo").innerHTML = Math.floor(Math.random() * 1000);
 
-
-    </script>
+    document.getElementById('userInput').addEventListener('keyup', function() {
+      const userInput = document.getElementById('userInput').value;
+      document.getElementById('displayText').textContent = userInput;
+    });
+  </script>
 </body>
-</html> 
+</html>
+ 
