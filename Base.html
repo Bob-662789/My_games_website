@@ -27,12 +27,16 @@
     <iframe src="https://www.youtube.com/embed/MU4Ela05lGc?si=U91s2a1GxYcR7ACJ&controls=0&rel=0" title="YouTube video player"></iframe>
   </div>
   <script>
+    function makeAnchorTag(game_url, userInput) {
+      const anchorTag = document.getElementById('displayText2');
+      anchorTag.href = game_url; // Use the full href from the parsed URL
+      anchorTag.textContent = userInput; // Display the URL as text
+      anchorTag.target = '_blank'; // Open the link in a new tab 
+    }
     const userInput = localStorage.getItem("userInput");
     const game_url = localStorage.getItem("game_url");
-    let anchorTag = document.getElementById('displayText2');
-    anchorTag.href = game_url; // Use the full href from the parsed URL
-    anchorTag.textContent = userInput; // Display the URL as text
-    anchorTag.target = '_blank'; // Open the link in a new tab
+  
+    makeAnchorTag(game_url, userInput)
     
     document.getElementById('game_url').addEventListener('keyup', function() {
       const game_url = document.getElementById('game_url').value.toString();
@@ -44,7 +48,9 @@
       anchorTag.href = game_url; // Use the full href from the parsed URL
       anchorTag.textContent = userInput; // Display the URL as text
       anchorTag.target = '_blank'; // Open the link in a new tab
+      alert();
     });
+    
     
   </script>
 </body>
